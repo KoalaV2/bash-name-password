@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "Hello! What is your name?"
+echo "Hello! What's your name?"
 read name
-if [ $name == koala ]; then
-	echo "Hello $name!"
+if [[ "$name" == koala ]]; then
+        echo "Hello "$name"!"
 else
-	echo "Hello $(whoami)"
+        echo "Hello $(whoami)"
 fi
 
